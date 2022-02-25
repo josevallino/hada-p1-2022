@@ -19,17 +19,25 @@ namespace hada_p1
                 char unidad = char.Parse(Console.ReadLine());
                 Console.WriteLine("Cantidad: ");
                 double cantidad = double.Parse(Console.ReadLine());
-                
-                // Dependiendo de la unidad introducida y la catidad se realiza la conversion deseada
-                if (unidad == 'm')
+
+                if (unidad == 'h')
                 {
-                    conversion = HadaP1.Minutes2Seconds(cantidad);
-                    Console.WriteLine(cantidad + " minutos son " + conversion + " segundos");
+                    conversion= HadaP1.Hours2Minutes(cantidad);
+                    Console.WriteLine(cantidad + " horas son " + conversion + " minutos");
                 }
                 else
                 {
-                    conversion = HadaP1.Seconds2Minutes(cantidad);
-                    Console.WriteLine(cantidad + " segundos son " + conversion + " minutos");
+                    // Dependiendo de la unidad introducida y la catidad se realiza la conversion deseada
+                    if (unidad == 'm')
+                    {
+                        conversion = HadaP1.Minutes2Seconds(cantidad);
+                        Console.WriteLine(cantidad + " minutos son " + conversion + " segundos");
+                    }
+                    else
+                    {
+                        conversion = HadaP1.Seconds2Minutes(cantidad);
+                        Console.WriteLine(cantidad + " segundos son " + conversion + " minutos");
+                    }
                 }
               
                 Console.WriteLine("¿Realizar más conversiones? (s/n): ");
