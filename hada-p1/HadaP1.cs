@@ -8,6 +8,7 @@ namespace hada_p1
 {
     class HadaP1
     {
+        // Convierte de segundos a minutos
         public static double Seconds2Minutes(double s)
         {
             if(s != 0)
@@ -16,7 +17,7 @@ namespace hada_p1
             }
             return 0;
         }
-
+        // Convierte de minutos a segundos
         public static double Minutes2Seconds(double m)
         {
             m * 60;
