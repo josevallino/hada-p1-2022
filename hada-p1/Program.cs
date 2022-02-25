@@ -14,11 +14,13 @@ namespace hada_p1
             double conversion;
             do
             {
+                // solicita la unidad a partir de la cual hacer la conversion
                 Console.WriteLine("Unidad (Horas [h] / minutos [m] / segundos [s]): ");
                 char unidad = char.Parse(Console.ReadLine());
                 Console.WriteLine("Cantidad: ");
                 double cantidad = double.Parse(Console.ReadLine());
                 
+                // Dependiendo de la unidad introducida y la catidad se realiza la conversion deseada
                 if (unidad == 'm')
                 {
                     conversion = HadaP1.Minutes2Seconds(cantidad);
