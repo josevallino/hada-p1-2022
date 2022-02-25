@@ -1,5 +1,6 @@
 .vs
 obj
+bin
 desktop.ini
 readme.txt
 bin/Debug/hada-p1.exe
